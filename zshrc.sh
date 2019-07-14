@@ -41,6 +41,12 @@ function chpwd_update_git_vars() {
 }
 
 function update_current_git_vars() {
+
+    # disable per directory
+    if [[ "$(command git config --get zsh-git-prompt.hide-status 2>/dev/null)" == "1" ]]; then
+    return
+    fi
+
     unset __CURRENT_GIT_STATUS
 
     if [[ "$GIT_PROMPT_EXECUTABLE" == "python" ]]; then

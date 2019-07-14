@@ -1,3 +1,12 @@
+## FORK
+
+- adds ability to disable per directory or toggle. Useful if git status consumes too many resources
+- toggle with `git config zsh-git-prompt.hide-status 1`
+
+
+
+## Original README
+
 # Informative git prompt for zsh
 
 [![Build Status](https://travis-ci.org/olivierverdier/zsh-git-prompt.svg)](https://travis-ci.org/olivierverdier/zsh-git-prompt)
